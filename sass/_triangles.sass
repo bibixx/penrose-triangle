@@ -1,0 +1,115 @@
+.animating
+  transform-origin: center 66%
+  animation: hide-anim .75s linear 10.5s forwards
+
+  div#t1
+    width: 100%
+    height: 100%
+
+    div.ll:before
+      +animation(1)
+      animation: show 0.75s linear 0s forwards, hide-t1-ll 0.25s linear 6.75s forwards, hide-t1-ll-2 0.25s linear 7.5s forwards
+      +dir2
+    div.lb:before
+      animation: show 0.75s linear 0.75s forwards, hide-t1-lb 0.25s linear 7.25s forwards, hide-t1-lb-2 0.25s linear 8s forwards
+      +dir2
+    div.lr:before
+      +animation(1)
+      animation: show 0.75s linear 1.5s forwards, hide-t1-lr 0.25s linear 7s forwards, hide-t1-lr-2 0.25s linear 7.75s forwards
+      +dir1
+
+
+  div#t2
+    width: 20%
+    height: 20%
+    bottom: 0
+
+    div.lr:before
+      +dir2
+      animation: show 0.375s linear 2.25s forwards
+
+
+  div#t3
+    width: 20%
+    height: 20%
+    bottom: 0
+    right: 0
+
+    div.ll:before
+      +dir1
+      animation: show 0.375s linear 2.625s forwards
+
+
+  div#t4
+    width: 20%
+    height: 20%
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+
+    div.lb:before
+      +dir1
+      animation: show 0.375s linear 3s forwards
+
+  div#t5
+    width: 80%
+    height: 80%
+    bottom: 0
+    left: 20%
+
+    div.ll:before
+      +dir1
+      animation: show 0.5625s linear 3.375s forwards, hide-t5-ll 0.5s linear 8.25s forwards
+
+  div#t6
+    width: 80%
+    height: 80%
+    bottom: 20%
+    left: 10%
+
+    div.lb:before
+      +dir1
+      animation: show 0.5625s linear 3.9375s forwards, hide-t6-lb 0.5s linear 8.75s forwards
+
+  div#t7
+    width: 80%
+    height: 80%
+    bottom: 0%
+    left: 0%
+
+    div.lr:before
+      +dir2
+      animation: show 0.5625s linear 4.5s forwards, hide-t7-lr 0.5s linear 9.25s forwards
+
+  div#t8
+    width: 30%
+    height: 30%
+    top: 50%
+    left: 45%
+    transform: translateX(-50%)
+
+    div.lr:before
+      +dir2
+      animation: show 0.5625s linear 5.0625s forwards, hide-t8-lr 0.25s linear 9.75s forwards
+
+  div#t9
+    width: 30%
+    height: 30%
+    top: 50%
+    left: 55%
+    transform: translateX(-50%)
+
+    div.ll:before
+      +dir1
+      animation: show 0.5625s linear 5.625s forwards, hide-t9-ll 0.25s linear 10s forwards
+
+  div#t10
+    width: 30%
+    height: 30%
+    top: 40%
+    left: 50%
+    transform: translateX(-50%)
+
+    div.lb:before
+      +dir1
+      animation: show 0.5625s linear 6.1875s forwards, hide-t10-lb 0.25s linear 10.25s forwards

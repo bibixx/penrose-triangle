@@ -1,0 +1,11 @@
+=animation($duration)
+  animation: show $duration*3/4*1s linear $delay*1s forwards
+  $delay: $delay+$duration*3/4 !global
+
+=dir1
+  left: auto
+  right: 0
+
+=dir2
+  left: 0
+  right: auto
