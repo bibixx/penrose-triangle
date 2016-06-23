@@ -349,8 +349,8 @@ div.lr {
   -webkit-transform-origin: center 66%;
       -ms-transform-origin: center 66%;
           transform-origin: center 66%;
-  -webkit-animation: hide-anim .75s linear 10.5s forwards;
-          animation: hide-anim .75s linear 10.5s forwards;
+  -webkit-animation: hide-anim .75s linear 11.5s forwards;
+          animation: hide-anim .75s linear 11.5s forwards;
 }
 
 .animating div#t1 {
